@@ -1,3 +1,3 @@
 export default {
-    "url":"https://sigap-control-recibos.herokuapp.com/"        
+    "url":"http://localhost:7896/"        
 }
