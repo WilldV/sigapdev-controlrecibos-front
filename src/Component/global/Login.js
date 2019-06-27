@@ -19,19 +19,28 @@ class Login extends Component{
         return this.state.username.length > 0 && this.state.password.length > 0;
     }
 
-    async handleClick() {
-        var URL = API.url;
-        const response = await axios.post(URL+'login',{
+    async handleClick(e) {
+        e.preventDefault()
+        const URL = API.url;
+        try {
+            const response = await axios.post(URL+'login',{
                 username: this.state.username,
                 password: this.state.password,
-             },       
-          {
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
-            }
-          })
-        alert(response.data.status)        
+                },       
+            {
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                }   
+            })
+            localStorage.setItem('user', true);
+            window.location = '/';
+        } catch (error) {
+            console.log(error)
+            alert(error.response.data)
+        }
+        
+                
    }
    handleLogin() {
     console.log("USUARIO: " + this.state.usuario);

@@ -23,13 +23,23 @@ const AuthRoute = ({component: Component, ...rest}) => {
   )}/>
 }
 
+const AuthRoute2 = ({component: Component, ...rest}) => {
+  return <Route {...rest} render = {props => (
+    isLogged() ?(
+      <Redirect to={{pathname: '/'}}/>
+      ) : 
+    (
+      <Component {...props}/>
+      ) 
+  )}/>
+}
 class App extends Component {
   render() {
     return (
       <div className="App">
         <BrowserRouter>
           <Switch>
-            <Route exact path="/login" render={props => <Login {...props}/> } />
+            <AuthRoute2 exact path="/login" component={Login} />
             <AuthRoute exact path="/nueva" component={NewCollection} />
             <AuthRoute exact path="/" component={CheckCollection} />
           </Switch>
