@@ -3,6 +3,8 @@ import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import API from './API/API'
 import axios from 'axios'
 
+import "./css/log.css";
+
 class Login extends Component{
 
     constructor(props) {
@@ -54,45 +56,63 @@ class Login extends Component{
     }
     
     render(){
-        return (    
-            <div class="container">
-            <div class="col-sm-6 mx-auto">
-                <div class="card mt-5">
-                    <div class="card-body">
-                        <h1 class="text-center">
-                            <span class="fa fa-sign-in-alt"></span> Login</h1>
-                        <form onSubmit={this.handleClick}>
-                            <FormGroup controlId="username" bsSize="large">
-                                <ControlLabel className="input">Usuario:</ControlLabel>
-                                <FormControl
-                                    autoFocus
-                                    type="text"
-                                    value={this.state.username}
-                                    onChange={this.handleChange}
-                                />
-                            </FormGroup>
-                            <FormGroup controlId="password" bsSize="large">
-                                <ControlLabel className="input">Contraseña:</ControlLabel>
-                                <FormControl
-                                value={this.state.password}
-                                onChange={this.handleChange}
-                                type="password"
-                                />
-                            </FormGroup>
-                            <Button
-                                block
-                                bsSize="large"
-                                disabled={!this.validateForm()}
-                                type="submit"
-                                onChange=""
-                                >
-                                Ingresar
-                            </Button>
-                        </form>
-                    </div>
+        return (
+           <div class="containerx" >
+            <div id="login" class="signin-card">
+                <div class="logo-image">
+                    
+                    <img src="http://aulavirtual.sistemas.unmsm.edu.pe/pregrado2017/pluginfile.php/2/course/section/2/logofisi.png" width="315"/>
                 </div>
+                <h1 class="display1">SIGAP</h1>
+                <div class="centrar">
+                 <img src="http://getdrawings.com/free-icon-bw/profile-png-icon-2.png" width="150" />
+                 
+                 </div>
+                <p class="subhead">LOGIN</p>
+                <form onSubmit={this.handleClick} >
+                    <FormGroup controlId="username" bsSize="large">
+                       <ControlLabel className="username">Usuario:</ControlLabel>
+                        <FormControl
+                           autoFocus
+                            type="text"
+                            value={this.state.username}
+                            onChange={this.handleChange}
+                            placeholder="username"
+                            className="user"
+                        />
+                    </FormGroup>
+                  
+
+                    <FormGroup controlId="password" bsSize="large">
+                        <ControlLabel className="password">Contraseña:</ControlLabel>
+                        <FormControl
+                        value={this.state.password}
+                        onChange={this.handleChange}
+                        type="password"
+                        placeholder="ejm:123456"
+                        className="pass"
+                        />
+                    </FormGroup>
+
+                    <Button
+                        className="centrar"
+                        block
+                        bsSize="large"
+                        disabled={!this.validateForm()}
+                        type="submit"
+                        onChange=""
+                        placeholder="Ingresar"
+                        >
+                        Ingresar
+                    </Button>
+
+
+
+                </form>
+
             </div>
-        </div>)
+        </div>
+        )
     }
 
 }

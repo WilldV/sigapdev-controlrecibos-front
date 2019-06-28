@@ -4,7 +4,7 @@ import './global/css/App.css';
 import { Switch, Route, Redirect, BrowserRouter} from "react-router-dom";
 import CheckCollection from "./CheckCollection";
 import NewCollection from "./NewCollection";
-import Login from "./global/Login"
+import Login from "./Login"
 
 const isLogged = () => {
   const user = localStorage.getItem('user')
