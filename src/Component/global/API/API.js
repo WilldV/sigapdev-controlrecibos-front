@@ -1,3 +1,3 @@
 export default {
-    "url":"http://localhost:7896/"        
+    "url":"https://devteamback.herokuapp.com/"        
 }
