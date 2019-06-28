@@ -4,7 +4,6 @@ import API from './API/API'
 import axios from 'axios'
 
 import "./css/log.css";
-
 class Login extends Component{
 
     constructor(props) {
@@ -39,7 +38,7 @@ class Login extends Component{
             window.location = '/';
         } catch (error) {
             console.log(error)
-            alert(error.response.data)
+            alert("Usuario y/o contraseña incorrectos")
         }
         
                 
@@ -94,17 +93,21 @@ class Login extends Component{
                         />
                     </FormGroup>
 
-                    <Button
-                        className="centrar"
-                        block
-                        bsSize="large"
-                        disabled={!this.validateForm()}
-                        type="submit"
-                        onChange=""
-                        placeholder="Ingresar"
-                        >
-                        Ingresar
-                    </Button>
+                    <div class="centrar">
+                        <Button 
+                            block
+                            bsSize="large"
+                            disabled={!this.validateForm()}
+                            type="submit"
+                            onChange=""
+                            placeholder="Ingresar"
+                            variant="danger"
+                            >
+                            Ingresar
+                        </Button>
+                        
+
+                    </div>
 
 
 
