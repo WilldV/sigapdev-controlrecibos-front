@@ -59,15 +59,21 @@ class Login extends Component{
         return (
            <div class="containerx" >
             <div id="login" class="signin-card">
-                <div class="logo-image">
-                    
-                   
-                </div>
+                
                 <h1 class="display1">SIGAP</h1>
-                <div class="centrar">
-                 <img src="http://getdrawings.com/free-icon-bw/profile-png-icon-2.png" width="150" />
-                 
-                 </div>
+                
+
+                 <div class="view">
+                  <div class="plane main">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                </div>
+                
                 <p class="subhead">LOGIN</p>
                 <form onSubmit={this.handleClick} >
                     <FormGroup controlId="username" bsSize="large">
