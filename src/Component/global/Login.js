@@ -63,16 +63,14 @@ class Login extends Component{
                 <h1 class="display1">SIGAP</h1>
                 
 
-                 <div class="view">
-                  <div class="plane main">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                  </div>
+                 
+                <div class="logo-image">
+                    <img src="http://escuelamayorandrade.com/img/login.png" width="150" />
+                   
                 </div>
+                
+                
+
                 
                 <p class="subhead">LOGIN</p>
                 <form onSubmit={this.handleClick} >
