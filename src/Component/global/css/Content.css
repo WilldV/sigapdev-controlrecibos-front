@@ -35,9 +35,9 @@ input{
 .btn{
     margin: 10px 0px;
     width: 120px ;
-    background: transparent;
-    color: #847592 !important;
-    border:1px solid #847592;
+    background: #000000 transparent;
+    color: #white !important;
+    border:1px solid #000000;
 }
 
 .btn:hover{
@@ -47,7 +47,7 @@ input{
     margin-left: 30px !important;
 }
 .cont_boton{
-
+	 color: #ffffff !important;
 }
 .botones1{
     background: blue;

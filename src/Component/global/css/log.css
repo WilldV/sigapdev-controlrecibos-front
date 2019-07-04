@@ -3,10 +3,7 @@
 /* -- import Bootstrap v3 ----------------------------- */
 /* -- import Roboto Font ------------------------------ */
 /* -- body styles ------------------------------------- */
- body {
-	 font-family: "Roboto", 'Helvetica Neue, Helvetica, Arial', sans-serif;
-	 background: transparent;
-}
+
 /* -- button styles ------------------------------------- */
 /*-- signin-card animation ---------------------------------------- */
 .containerx{
@@ -39,7 +36,7 @@
 	 font-size: 28px;
 	 font-weight: 100;
 	 line-height: 1.2;
-	 color: #757575;
+	 color: #757575; /*SIGAP*/
 	 font-weight: bold;
 	 text-transform: inherit;
 	 letter-spacing: inherit;
@@ -48,13 +45,14 @@
 	display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
  .subhead {
  	padding-top: 50px;
 	 font-size: 16px;
 	 font-weight: 300;
 	 line-height: 1.1;
-	 color: #212121;
+	 color: white;
 	 text-transform: inherit;
 	 letter-spacing: inherit;
 }
@@ -71,21 +69,17 @@
     text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
 	}
 	
-	#ctmr{
-		width: 120px;
-		height: 50px;
-		margin-top:10px;
-		margin-bottom: 40px;
-	}
-	#ctmr:hover{
+	
 
-		background-color: #000;
-
-	}
+.bot{
+	background-color: black;
+	color: white;
+}
 
 
-.button:hover{
-	background-color: #FFF;
+
+
+.bot:hover{
 	 -webkit-transition-duration: .6s;
     -moz-box-shadow:
         0 15px 30px 0 rgba(255,255,255,.15) inset,
@@ -101,10 +95,11 @@
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-bottom: 1px solid rgba(0, 0, 0, 0.55);
     border-radius: 6px 6px 6px 6px;
-   
+    background: 	#808080;
   
 
 }
+
 
 .user{
 	font-weight: bold;

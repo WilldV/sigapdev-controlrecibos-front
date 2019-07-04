@@ -39,6 +39,7 @@ class Login extends Component{
         } catch (error) {
             console.log(error)
             alert("Usuario y/o contraseña incorrectos")
+            document.location.reload(true)
         }
         
                 
@@ -60,7 +61,7 @@ class Login extends Component{
             <div id="login" class="signin-card">
                 <div class="logo-image">
                     
-                    <img src="http://aulavirtual.sistemas.unmsm.edu.pe/pregrado2017/pluginfile.php/2/course/section/2/logofisi.png" width="315"/>
+                   
                 </div>
                 <h1 class="display1">SIGAP</h1>
                 <div class="centrar">
@@ -96,12 +97,13 @@ class Login extends Component{
                     <div class="centrar">
                         <Button 
                             block
+                            
                             bsSize="large"
                             disabled={!this.validateForm()}
                             type="submit"
-                            onChange=""
                             placeholder="Ingresar"
-                            variant="danger"
+                            controlId="bot"
+                            className="bot"
                             >
                             Ingresar
                         </Button>

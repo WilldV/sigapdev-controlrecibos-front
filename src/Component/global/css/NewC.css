@@ -25,7 +25,7 @@ body{
 .btn-success .disabled, .btn-success:disabled{
     background-color: #fff !important;
     border-color: #6c757d !important;
-    color : #847592 !important;
+    color : #white !important;
 }
 
 #advanced-search-form{
